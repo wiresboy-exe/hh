@@ -64,6 +64,16 @@
       .grid-container {display: grid; grid-column-gap: 50px; grid-row-gap: 50px;}
       .grid-item{grid-row-start: 1; grid-row-end: 1;}
    </style>
+   <script>
+      function getUrlParam(parameter, defaultValue) {
+         const urlParams = new URLSearchParams(window.location.search);
+         return urlParams.get(parameter) || defaultValue;
+      }
+
+      var code = getUrlParam('code', 'na')
+
+      
+   </script>
    <body>
       <div class="div1">
          <button class="button button4" onclick="alert('This has not been setup yet')">Staff Apps</button>
